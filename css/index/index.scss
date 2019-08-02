@@ -44,6 +44,11 @@ $weight: (
 body {
     background-color: lightgray;
 
+    @include mini {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .headline {
         width: 100%;
         height: 100vh;
@@ -63,7 +68,7 @@ body {
 
         p {
             font-family: 'Playfair Display', serif;
-            font-size: 4em;
+            font-size: 3em;
             text-align: center;
         }
     }
@@ -117,11 +122,8 @@ body {
 
         @include mini {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-                "image"
-                "text";
-            justify-content: center;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 7em .5em;
         }
 
         .text {
@@ -129,7 +131,6 @@ body {
 
             @include mini {
                 padding: 1em 0 .5em 0;
-                grid-area: text;
             }
 
             #title {
@@ -137,6 +138,10 @@ body {
                 font-weight: weight(bold);
                 font-size: 2.5em;
                 color: color(font-title);
+
+                @include mini {
+                    font-size: 2em;
+                }
             }
 
             p {
@@ -158,7 +163,6 @@ body {
                 height: 31.25em;
 
                 @include mini {
-                    grid-area: image;
                 }
             }
         }
@@ -184,6 +188,11 @@ body {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: .5em;
             
+            @include mini {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }    
+            
             .dummy {
                 width: fit-content;
                 height: fit-content;
@@ -195,7 +204,7 @@ body {
 
                     @include mini {
                         height: auto;
-                        width: 20em;
+                        width: 25em;
                     }
                 }
             }
@@ -204,6 +213,12 @@ body {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: .5em;
+
+                @include mini {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    align-content: center;
+                }        
 
                 .dummy2 {
                     width: fit-content;
@@ -214,7 +229,7 @@ body {
                         height: auto;
 
                         @include mini {
-                            width: 6em;
+                            width: 5.75em;
                         }
                     }
                 }   
@@ -256,28 +271,28 @@ body {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 1em;
 
-            .image {
+            .image2 {
                 background-color: white;
-                width: auto;
-                height: 640px;
-            }
+                width: 17em;
+                height: 17em;
 
-            .nest {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 1em;
-
-                .image2 {
-                    background-color: white;
-                    width: auto;
-                    height: auto;
+                @include mini {
+                    grid-template-columns: repeat(4, 1fr);
+                    width: 11em;
+                    height: 11em;
                 }
             }
         }
 
 
         .text {
-            padding: 0 9em 0 9em;
+            padding: 0 9em 0 0;
+            border: 1px solid red;
+
+            @include mini {
+                padding: 0;
+            }
+
             #title {
                 font-family: 'Lato', sans-serif;
                 font-weight: weight(bold);
@@ -304,6 +319,7 @@ body {
         
         @include mini {
             grid-gap: 2em;
+            grid-template-columns: repeat(4, 1fr);
         }
         
         .trd {
@@ -311,8 +327,8 @@ body {
             height: 7em;
 
             @include mini {
-                width: 7.5em;
-                height: 3.5em;
+                width: 6em;
+                height: auto;
             }
         }
     }

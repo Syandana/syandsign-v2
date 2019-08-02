@@ -1,0 +1,71 @@
+$colors: (
+    primary: #ffffff,
+    primary-light: #f4f4f4,
+    primary-dark: #a4a4a4,
+    accent: red,
+    secondary: #f4f4f4,
+    font-def: black,
+    font-title: #626262,
+    font-desc: #818181,
+);
+
+@function color($color-name) {
+    @return map-get($colors ,$color-name);
+  }
+
+$mini: 840px;
+
+@mixin mini {
+    @media (min-width: #{$mini}) {
+        @content;
+    }
+}
+
+$weight: (
+    thin: 100,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700,
+    black: 900,
+);
+@function weight($weight-name) {
+    @return map-get($weight ,$weight-name);
+  }
+
+
+.nav { 
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+
+    #logo {
+        float: left;
+        color: color(font-def);
+        text-decoration: none;
+        font-family: 'Playfair Display', serif;
+        font-size: 2em;
+    }
+    #button {
+        float: right;
+        padding: 1em 1em 1em 1em;
+        color: color(font-def);
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+    }
+
+    #button:hover {
+        color: color(primary-dark);
+    }
+
+    .active {
+        color: color(primary-dark);
+        border: 1px solid white;
+    }
+}

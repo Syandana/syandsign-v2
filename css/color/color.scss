@@ -1,0 +1,34 @@
+$colors: (
+    primary: #ffffff,
+    primary-light: #f4f4f4,
+    primary-dark: #a4a4a4,
+    accent: red,
+    secondary: #f4f4f4,
+    font-def: white,
+    font-title: #626262,
+    font-desc: #818181,
+);
+
+@function color($color-name) {
+    @return map-get($colors ,$color-name);
+  }
+
+$mini: 840px;
+
+@mixin mini {
+    @media (min-width: #{$mini}) {
+        @content;
+    }
+}
+
+$weight: (
+    thin: 100,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700,
+    black: 900,
+);
+@function weight($weight-name) {
+    @return map-get($weight ,$weight-name);
+  }

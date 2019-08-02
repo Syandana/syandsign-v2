@@ -313,7 +313,6 @@ body .exp .gallery .image2 {
 
 body .exp .text {
   padding: 0 9em 0 0;
-  border: 1px solid red;
 }
 
 @media (max-width: 720px) {

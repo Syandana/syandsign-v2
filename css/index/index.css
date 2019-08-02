@@ -35,10 +35,22 @@ body .headline #subtitle {
   margin-bottom: 1.5em;
 }
 
+@media (max-width: 720px) {
+  body .headline #subtitle {
+    font-size: .75em;
+  }
+}
+
 body .headline p {
   font-family: 'Playfair Display', serif;
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
+}
+
+@media (max-width: 720px) {
+  body .headline p {
+    font-size: 3em;
+  }
 }
 
 body .desc {

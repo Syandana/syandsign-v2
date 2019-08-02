@@ -64,12 +64,20 @@ body {
             text-align: center;
             letter-spacing: .3em;
             margin-bottom: 1.5em;
+
+            @include mini {
+                font-size: .75em;
+            }
         }
 
         p {
             font-family: 'Playfair Display', serif;
-            font-size: 3em;
+            font-size: 4em;
             text-align: center;
+            
+            @include mini {
+                font-size: 3em;
+            }
         }
     }
 

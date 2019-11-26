@@ -41,7 +41,7 @@ body .tips1 h1 {
 body .tips1 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: gray;
   padding-bottom: .25em;
 }
@@ -53,8 +53,8 @@ body .tips1 p {
 body .tips1 .identity {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   padding: 1em 0 0 0;
 }
 

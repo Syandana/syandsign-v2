@@ -44,6 +44,10 @@ $weight: (
 
     @include mini {
         padding: .25em 1em;
+
+        #button {
+            display: none;
+        }
     }
 
     #logo {

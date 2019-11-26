@@ -83,7 +83,7 @@ body {
         h2 {
             font-family: 'Montserrat', sans-serif;
             font-weight: weight(regular);
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: gray;
             padding-bottom: .25em;
         }
@@ -94,8 +94,12 @@ body {
 
         .identity {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             padding: 1em 0 0 0;
+
+            @include mini {
+                
+            }
 
             img {
                 border: 1px solid red;

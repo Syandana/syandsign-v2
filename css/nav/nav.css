@@ -12,6 +12,16 @@
   .nav {
     padding: .25em 1em;
   }
+  .nav #button {
+    display: none;
+  }
+  .nav #test {
+    display: inline;
+  }
+}
+
+.nav #test {
+  display: none;
 }
 
 .nav #logo {

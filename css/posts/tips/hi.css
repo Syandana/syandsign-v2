@@ -14,16 +14,36 @@ body .tips1 {
   padding: 0 19.5em;
 }
 
+@media (max-width: 720px) {
+  body .tips1 {
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 800px) {
+  body .tips1 {
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 1000px) {
+  body .tips1 {
+    padding: 0 1em;
+  }
+}
+
 body .tips1 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+  font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 400;
   font-size: 2.8125em;
 }
 
 body .tips1 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 1.875em;
+  font-size: 1.5em;
+  color: gray;
+  padding-bottom: .25em;
 }
 
 body .tips1 p {
@@ -35,6 +55,7 @@ body .tips1 .identity {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  padding: 1em 0 0 0;
 }
 
 body .tips1 .identity img {
@@ -62,13 +83,13 @@ body .tips1 .identity .text #date {
 body .tips1 #image {
   width: 100%;
   height: auto;
-  padding: 4em 0;
+  padding: 2em 0;
 }
 
 body .tips1 #text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 body .tips1 #text h3 {

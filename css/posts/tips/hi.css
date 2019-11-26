@@ -1,0 +1,78 @@
+/* SCSS */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+body .tips1 {
+  padding: 0 19.5em;
+}
+
+body .tips1 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.8125em;
+}
+
+body .tips1 h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.875em;
+}
+
+body .tips1 p {
+  color: black;
+}
+
+body .tips1 .identity {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+body .tips1 .identity img {
+  border: 1px solid red;
+}
+
+body .tips1 .identity .text {
+  border: 1px solid red;
+}
+
+body .tips1 .identity .text #author {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.0625em;
+  color: gray;
+}
+
+body .tips1 .identity .text #date {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.0625em;
+  color: gray;
+}
+
+body .tips1 #image {
+  width: 100%;
+  height: auto;
+  padding: 4em 0;
+}
+
+body .tips1 #text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+body .tips1 #text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+/*# sourceMappingURL=hi.css.map */

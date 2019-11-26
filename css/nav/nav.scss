@@ -1,7 +1,7 @@
 $colors: (
-    primary: #ffffff,
+    primary: #ffaa43,
     primary-light: #f4f4f4,
-    primary-dark: #a4a4a4,
+    primary-dark: #ff5f45,
     accent: red,
     secondary: #f4f4f4,
     font-def: white,
@@ -52,6 +52,8 @@ $weight: (
         text-decoration: none;
         font-family: 'Playfair Display', serif;
         font-size: 2em;
+        padding: .1em 0em .1em 0em;
+
     }
     
     #button {

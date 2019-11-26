@@ -1,0 +1,110 @@
+$colors: (
+    primary: #ffffff,
+    primary-light: #f4f4f4,
+    primary-dark: #a4a4a4,
+    accent: red,
+    secondary: #f4f4f4,
+    font-def: white,
+    font-title: #626262,
+    font-desc: #818181,
+);
+
+@function color($color-name) {
+    @return map-get($colors ,$color-name);
+  }
+
+$mini: 720px;
+
+@mixin mini {
+    @media (max-width: #{$mini}) {
+        @content;
+    }
+}
+
+$weight: (
+    thin: 100,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700,
+    black: 900,
+);
+
+@function weight($weight-name) {
+    @return map-get($weight ,$weight-name);
+  }
+
+/* SCSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+
+    .tips1 {
+        padding: 0 19.5em;
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: weight(black);
+            font-size: 2.8125em;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: weight(regular);
+            font-size: 1.875em;
+        }
+
+        p {
+            color: black;
+        }
+
+        .identity {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            img {
+                border: 1px solid red;
+            }
+
+            .text {
+                border: 1px solid red;
+                #author {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: weight(regular);
+                    font-size: 1.0625em;
+                    color: gray;
+                }
+        
+                #date {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: weight(regular);
+                    font-size: 1.0625em;
+                    color: gray;
+                }        
+            }
+        }
+
+        #image {
+            width: 100%;
+            height: auto;
+            padding: 4em 0;
+        }
+
+        #text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: weight(regular);
+            font-size: 1.2em;
+
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: weight(bold);
+                
+            }
+        }
+    }
+}

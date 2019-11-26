@@ -20,6 +20,7 @@
   text-decoration: none;
   font-family: 'Playfair Display', serif;
   font-size: 2em;
+  padding: .1em 0em .1em 0em;
 }
 
 .nav #button {
@@ -39,6 +40,6 @@
 }
 
 .nav #button:hover {
-  color: #a4a4a4;
+  color: #ff5f45;
 }
 /*# sourceMappingURL=nav.css.map */

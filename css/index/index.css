@@ -27,6 +27,7 @@ body .headline {
 }
 
 body .headline #subtitle {
+  z-index: 1;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: .75em;
@@ -53,12 +54,16 @@ body .headline p {
   }
 }
 
+body .headline #bg {
+  z-index: -1;
+}
+
 body .desc {
   display: -ms-grid;
   display: grid;
   width: 100%;
   height: 100%;
-  padding: 7em 3.75em 7em 3.75em;
+  padding: 5em 3.75em 5em 3.75em;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 3em;
@@ -230,7 +235,7 @@ body .featured .nested .nest2 {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-gap: .5em;
+  grid-gap: 1em;
 }
 
 @media (max-width: 720px) {
@@ -350,7 +355,7 @@ body .exp .text p {
 body .brands {
   display: -ms-grid;
   display: grid;
-  padding: 2em 3.75em 2em 3.75em;
+  padding: 1em 3.75em 1em 3.75em;
   -ms-grid-columns: (auto)[4];
       grid-template-columns: repeat(4, auto);
   grid-gap: 3em;
@@ -378,5 +383,13 @@ body .brands .trd {
     width: 6em;
     height: auto;
   }
+}
+
+body .brands p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #818181;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

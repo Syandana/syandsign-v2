@@ -21,7 +21,7 @@ body .headline {
 }
 
 body .headline #subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: .75em;
   text-align: center;
@@ -110,7 +110,7 @@ body .desc .cluster a {
 }
 
 body .desc .cluster a p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 500;
   font-size: 1em;
   text-align: center;
